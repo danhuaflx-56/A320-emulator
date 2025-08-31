@@ -1,0 +1,14 @@
+/* Make site header smaller */
+.md-header {
+  background-color: #004080; /* Airbus dark blue */
+}
+
+/* Style for homepage button */
+.homepage-button {
+  background-color: #005bbb;
+  color: white !important;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
