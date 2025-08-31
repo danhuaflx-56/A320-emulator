@@ -14,7 +14,7 @@
   background-image: url('assets/images/hero.jpg'); /* your hero image */
   background-size: cover;      /* fills the entire div */
   background-position: center; /* initial center position */
-  height: 500px;               /* adjust height as needed */
+  height: auto;               /* adjust height as needed */
   position: relative;
   overflow: hidden;            /* prevents scroll artifacts */
 }
