@@ -1,3 +1,7 @@
-# A320 Documentation
+::: center
 
-Welcome! This is my guide for flying the Airbus A320.
+# _A320 Emulator_
+
+Learning to fly has never been easier.
+##Explore the systems of the beautiful A320, the bestselling and modern passenger jet in history.
+:::
