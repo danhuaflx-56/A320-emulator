@@ -1,6 +1,10 @@
 site_name: A320 Documentation
 theme:
   name: material
+  palette:
+    scheme: default
+    primary: blue
+    accent: indigo
 
 extra:
   font:
