@@ -4,7 +4,7 @@
   color: #ffffff !important; /* switch text to white for readability */
 }
 .md-header {
-  background-color: #004080; /* Airbus dark blue */
+  background-color: #000000; /* Airbus dark blue */
   height: 90px;       /* default ~56px */
   padding: 10px 20px; /* add some breathing room */
 }
