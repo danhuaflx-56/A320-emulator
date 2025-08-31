@@ -25,6 +25,14 @@ hide:
   </a>
 </div>
 
+<script>
+window.addEventListener('scroll', function() {
+  const hero = document.querySelector('.hero-section');
+  const scrollY = window.scrollY;
+  hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
+});
+</script>
+
 <!-- Section 1 -->
 <div style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#111; color:white; text-align:center; padding:100px 20px;">
   <h2 style="font-size:2.5em; margin-bottom:20px;">Getting Started</h2>
