@@ -351,11 +351,32 @@ window.addEventListener('load', updateHeroBackground);
 
 <!-- Section 1 -->
 <div class="section rectangle-2" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#111; color:white; text-align:center; padding:100px 20px;">
-  <h2 style="font-size:2.5em; margin-bottom:20px;">Getting Started</h2>
-  <p style="font-size:1.2em; max-width:700px; margin:0 auto;">
+  <h2  class="animated-text" style="font-size:2.5em; margin-bottom:20px;">Getting Started</h2>
+  <p   class="animated-text" style="font-size:1.2em; max-width:700px; margin:0 auto;">
     Learn about cockpit layout, controls, and basic startup procedures.
   </p>
 </div>
+
+<script>
+function animateOnScroll() {
+  const elements = document.querySelectorAll('.animated-text');
+
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Trigger when element is in the bottom half of the screen
+    if(rect.top < windowHeight * 0.8) {
+      el.classList.add('in-view');
+    }
+  });
+}
+
+// Run on scroll
+window.addEventListener('scroll', animateOnScroll);
+// Run on load
+window.addEventListener('load', animateOnScroll);
+</script>
 
 <!-- Section 2 -->
 <div style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#1a1a1a; color:white; text-align:center; padding:100px 20px;">
