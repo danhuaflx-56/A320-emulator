@@ -1,6 +1,6 @@
 /* Make site header smaller */
 .md-main, .md-content, .md-typeset {
-  background-color: #000000 !important;
+  background-color: #212536 !important;
   color: #ffffff !important; /* switch text to white for readability */
 }
 .md-header {
