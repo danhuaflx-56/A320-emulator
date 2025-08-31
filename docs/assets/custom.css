@@ -14,7 +14,8 @@
     display: none !important;
 }
 .md-main, .md-content, .md-typeset {
-  padding-top: 110px;
+    margin-left: 0 !important;
+  padding-top: 0px;
   background-color: #212536 !important;
   color: #ffffff !important; /* switch text to white for readability */
 }
