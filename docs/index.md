@@ -1,5 +1,5 @@
 <!-- Hero Section (Full Width) -->
-<div style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-image: url('assets/banner.jpg'); background-color:#004080; color:white; text-align:center; padding:120px 20px;">
+<div style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-image: url('assets/banner.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/banner.jpg'); background-color:#004080; color:white; text-align:center; padding:120px 20px;">
   <h1 style="font-size:3.5em; font-weight:bold; margin-bottom:15px;">A320 Emulator</h1>
   <h3 style="font-size:1.8em; font-style:italic; color:#ccc; margin-bottom:40px;">
     Learning to fly has never been easier
