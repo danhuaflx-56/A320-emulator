@@ -14,7 +14,6 @@ extra:
     text: Roboto
     code: Fira Code
 nav:
-  - Home: index.md
   - Getting Started: getting-started.md
   - Systems Overview: systems-overview.md
   - Procedures: procedures.md
