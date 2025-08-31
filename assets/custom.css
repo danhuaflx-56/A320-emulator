@@ -7,8 +7,10 @@
 /* Optional: remove extra padding the dropdown left */
 .md-header-nav,
 .md-header-nav__menu,
-.md-header-nav__button,
-.md-header__title {
+.md-header-nav__button, {
+    display: none !important;
+}
+.md-sidebar {
     display: none !important;
 }
 .md-main, .md-content, .md-typeset {
