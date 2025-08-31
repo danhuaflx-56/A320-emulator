@@ -56,3 +56,6 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+body, .md-main {
+    overflow: auto;  /* ensures scrolling is enabled */
+}
