@@ -94,16 +94,27 @@ window.addEventListener('load', animateOnScroll);
 </div>
 
 <!-- Footer Banner -->
-<footer class="footer-banner"style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#000000; color:white; text-align:center; padding:100px 20px;">
-  <div class="footer-content" style="display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto;">
-    <img src="assets/logo.png" alt="A320 Emulator Logo" style="height:50px; margin-bottom:15px;">
-    <p>© 2025 A320 Emulator. All rights reserved.</p>
-    <h3 style="font-size:1.8em; color:#ccc; margin-bottom:40px;">
-    Contact:
-    </h3>
-    <p><a href="mailto:daniel56huang@gmail.com">daniel56huang@gmail.com</a></p>
+<footer class="footer-banner" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#000000; color:white; padding:40px 20px;">
+  <div class="footer-content" style="display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; flex-wrap:wrap;">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="A320 Emulator Logo" style="height:75px;">
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact" style="text-align:right;">
+      <h3 style="font-size:1.2em; color:#ccc; margin:0 0 5px 0;">Contact:</h3>
+      <p style="margin:0;"><a href="mailto:someone@gmail.com" style="color:#bbb; text-decoration:none;">someone@gmail.com</a></p>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-copy" style="flex-basis:100%; text-align:center; margin-top:20px; font-size:0.9em; color:#777;">
+      © 2025 A320 Emulator. All rights reserved.
+    </div>
   </div>
 </footer>
+
 
 <!-- Section 5 -->
 <div class="section rectangle-5 style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#212536; color:white; text-align:center; padding:10px 20px;">
