@@ -104,16 +104,16 @@ body, .md-main {
 }
 
 .footer-banner {
-  width: 100vw;
-  background-color: #000000; /* dark color like header */
+  width: 100%;               /* full page width */
+  background-color: #000000; /* solid band */
   color: #ffffff;
   text-align: center;
-  padding: 20px 10px;       /* vertical + horizontal padding */
-  margin-top: 50px;         /* space from previous section */
+  padding: 20px 0;           /* vertical spacing */
+  margin-top: 0;             /* no spacing from bottom */
 }
 
 .footer-banner a {
-  color: #005bbb;           /* links in blue */
+  color: #005bbb;
   text-decoration: none;
   font-weight: bold;
 }
@@ -123,9 +123,11 @@ body, .md-main {
 }
 
 .footer-content {
-  max-width: 1000px;        /* keeps content centered and not too wide */
+  max-width: 1000px;         /* optional: keeps text readable on large screens */
   margin: 0 auto;
+  padding: 0 20px;           /* horizontal padding */
 }
+
 .md-footer {
   display: none !important;
 }
