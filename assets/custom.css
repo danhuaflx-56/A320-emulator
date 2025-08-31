@@ -1,12 +1,18 @@
 /* Make site header smaller */
 .md-main, .md-content, .md-typeset {
+  padding-top: 100px;
   background-color: #212536 !important;
   color: #ffffff !important; /* switch text to white for readability */
 }
 .md-header {
+  position: sticky;
   background-color: #000000; /* Airbus dark blue */
   height: 90px;       /* default ~56px */
   padding: 10px 20px; /* add some breathing room */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  top: 0;
+  z-index: 1000;        /* keeps it above content */
+  width: 100%;
 }
 .md-header__inner {
   display: flex;
