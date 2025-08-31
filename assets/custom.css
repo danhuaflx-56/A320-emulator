@@ -1,6 +1,7 @@
 /* Make site header smaller */
-.md-main {
-  background-color: #f0f4f9; /* light Airbus blue/gray */
+.md-main, .md-content, .md-typeset {
+  background-color: #000000 !important;
+  color: #ffffff !important; /* switch text to white for readability */
 }
 .md-header {
   background-color: #004080; /* Airbus dark blue */
@@ -15,10 +16,10 @@
 .md-header__title {
   margin: 0;
   padding: 0;
-  font-size: 2.4em; /* bump text size if you want */
-  line-height: normal; /* reset the old hack */
+  font-size: 3em;        /* try 3em or 3.2em */
+  line-height: 1;        /* keeps it tight */
   display: flex;
-  align-items: center;
+  align-items: center;   /* vertical centering */
 }
 
 
