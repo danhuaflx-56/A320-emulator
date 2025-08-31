@@ -36,4 +36,23 @@
   height: 60px;  /* adjust as needed */
   width: auto;
   margin-right: 10px; /* spacing between logo and text */
+  margin-top: -2px;
+}
+/* Make all main headings white */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3, 
+.md-typeset h4, 
+.md-typeset h5, 
+.md-typeset h6 {
+    color: #ffffff !important;
+}
+
+/* Optional: center the heading */
+.md-typeset h1 {
+    text-align: center;
+    font-size: 3em;  /* adjust size */
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
