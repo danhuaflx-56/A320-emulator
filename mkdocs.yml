@@ -15,9 +15,4 @@ extra:
     code: Fira Code
 nav:
   - Home: index.md
-  - Systems:
-      - Electrical: systems/electrical.md
-      - Hydraulics: systems/hydraulics.md
-  - Procedures:
-      - Normal Ops: procedures/normal-ops.md
-      - Abnormal Ops: procedures/abnormal-ops.md
+  - Getting Started: getting-started.md
