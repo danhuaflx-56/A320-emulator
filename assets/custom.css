@@ -90,3 +90,15 @@
 body, .md-main {
     overflow: auto;  /* ensures scrolling is enabled */
 }
+
+.animated-text {
+  opacity: 0;                   /* start invisible */
+  transform: translateY(50px);  /* start slightly below */
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* When the class 'in-view' is added, animate into place */
+.animated-text.in-view {
+  opacity: 1;
+  transform: translateY(0);     /* move to natural position */
+}
