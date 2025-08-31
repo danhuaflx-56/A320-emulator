@@ -15,7 +15,7 @@
 .md-header__title {
   margin: 0;
   padding: 0;
-  font-size: 1.4em; /* bump text size if you want */
+  font-size: 2.4em; /* bump text size if you want */
   line-height: normal; /* reset the old hack */
   display: flex;
   align-items: center;
