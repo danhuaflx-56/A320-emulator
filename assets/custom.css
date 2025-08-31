@@ -126,4 +126,6 @@ body, .md-main {
   max-width: 1000px;        /* keeps content centered and not too wide */
   margin: 0 auto;
 }
-
+.md-footer {
+  display: none !important;
+}
