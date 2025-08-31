@@ -7,9 +7,18 @@
   height: 80px;       /* default ~56px */
   padding: 10px 20px; /* add some breathing room */
 }
+.md-header__inner {
+  display: flex;
+  align-items: center;  /* centers everything vertically */
+}
 /* Center logo + title vertically */
 .md-header__title {
-  line-height: 80px; /* match header height */
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em; /* bump text size if you want */
+  line-height: normal; /* reset the old hack */
+  display: flex;
+  align-items: center;
 }
 
 
@@ -23,6 +32,7 @@
   text-decoration: none;
 }
 .md-header__button.md-logo img {
-  height: 60px;   /* default ~24px */
-  width: auto;    /* keep proportions */
+  height: 60px;  /* adjust as needed */
+  width: auto;
+  margin-right: 10px; /* spacing between logo and text */
 }
