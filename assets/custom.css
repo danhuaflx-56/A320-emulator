@@ -1,4 +1,13 @@
 /* Make site header smaller */
+/* Hide all header dropdown menus */
+.md-header-nav__button, .md-header-nav__menu {
+    display: none !important;
+}
+
+/* Optional: remove extra padding the dropdown left */
+.md-header-nav {
+    display: none !important;
+}
 .md-main, .md-content, .md-typeset {
   padding-top: 110px;
   background-color: #212536 !important;
