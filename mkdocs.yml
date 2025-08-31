@@ -2,6 +2,7 @@ site_name: A320 Documentation
 theme:
   name: material
   logo: assets/logo.png
+  favicon: assets/logo.png
   palette:
     scheme: default
     primary: blue
