@@ -94,10 +94,10 @@ window.addEventListener('load', animateOnScroll);
 </div>
 
 <!-- Footer Banner -->
-<div class="footer-banner" style="width: 100%; position: relative;">
-  <div class="footer-content" style="max-width:1000px; margin:0 auto; padding:10px 20px;">
+<footer class="footer-banner">
+  <div class="footer-content" style="margin:0 auto; padding:10px 20px;">
     <p>© 2025 A320 Emulator. All rights reserved.</p>
     <p>Contact: <a href="mailto:daniel56huang@gmail.com">daniel56huang@gmail.com</a></p>
   </div>
-</div>
+</footer>
 
