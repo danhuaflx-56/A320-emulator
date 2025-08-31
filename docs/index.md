@@ -26,11 +26,17 @@ hide:
 </div>
 
 <script>
-window.addEventListener('scroll', function() {
+function updateHeroBackground() {
   const hero = document.querySelector('.hero-section');
   const scrollY = window.scrollY;
   hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
-});
+}
+
+// Run on scroll
+window.addEventListener('scroll', updateHeroBackground);
+
+// Run once on page load
+window.addEventListener('load', updateHeroBackground);
 </script>
 
 <!-- Section 1 -->
