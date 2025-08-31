@@ -102,3 +102,28 @@ body, .md-main {
   opacity: 1;
   transform: translateY(0);     /* move to natural position */
 }
+
+.footer-banner {
+  width: 100vw;
+  background-color: #000000; /* dark color like header */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;       /* vertical + horizontal padding */
+  margin-top: 50px;         /* space from previous section */
+}
+
+.footer-banner a {
+  color: #005bbb;           /* links in blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-banner a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  max-width: 1000px;        /* keeps content centered and not too wide */
+  margin: 0 auto;
+}
+
