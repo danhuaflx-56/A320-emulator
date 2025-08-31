@@ -92,3 +92,11 @@ window.addEventListener('load', animateOnScroll);
     Learn how to operate the A320 like a pro with efficiency and realism in mind.
   </p>
 </div>
+
+<!-- Footer Banner -->
+<div class="footer-banner">
+  <div class="footer-content">
+    <p>© 2025 A320 Emulator. All rights reserved.</p>
+    <p>Contact: <a href="mailto:support@example.com">support@example.com</a></p>
+  </div>
+</div>
