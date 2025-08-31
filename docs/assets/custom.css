@@ -1,7 +1,17 @@
 /* Make site header smaller */
+.md-main {
+  background-color: #f0f4f9; /* light Airbus blue/gray */
+}
 .md-header {
   background-color: #004080; /* Airbus dark blue */
+  height: 80px;       /* default ~56px */
+  padding: 10px 20px; /* add some breathing room */
 }
+/* Center logo + title vertically */
+.md-header__title {
+  line-height: 80px; /* match header height */
+}
+
 
 /* Style for homepage button */
 .homepage-button {
@@ -11,4 +21,8 @@
   border-radius: 8px;
   font-size: 1.2em;
   text-decoration: none;
+}
+.md-header__button.md-logo img {
+  height: 60px;   /* default ~24px */
+  width: auto;    /* keep proportions */
 }
