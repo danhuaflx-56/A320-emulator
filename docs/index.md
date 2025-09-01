@@ -48,25 +48,23 @@ window.addEventListener('load', updateHeroBackground);
 </div>
 
 <script>
-function animateOnScroll() {
-  const elements = document.querySelectorAll('.animated-text');
-  
-  elements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    
-    // Trigger when element is in the bottom half of the screen
-    if(rect.top < windowHeight * 0.8) {
-      el.classList.add('in-view');
-    }
-  });
+function updateHeroBackground() {
+  const hero = document.querySelector('.hero-section');
+  const scrollY = window.scrollY;
+
+  // Smooth parallax using translateY instead of background-position
+  hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
 }
 
 // Run on scroll
-window.addEventListener('scroll', animateOnScroll);
-// Run on load
-window.addEventListener('load', animateOnScroll);
+window.addEventListener('scroll', () => {
+  requestAnimationFrame(updateHeroBackground);
+});
+
+// Run immediately so it’s aligned at load
+window.addEventListener('load', updateHeroBackground);
 </script>
+
 
 
 <!-- Section 2 -->
