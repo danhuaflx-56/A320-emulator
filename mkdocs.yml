@@ -4,6 +4,8 @@ theme:
   custom_dir: docs/overrides
   logo: assets/logo.png
   favicon: assets/logo.png
+  extra_css:
+    - assets/custom.css
   palette:
     scheme: default
     primary: blue
