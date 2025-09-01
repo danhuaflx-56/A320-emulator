@@ -317,3 +317,25 @@ body, .md-main {
     text-decoration: none; /* optional: remove underline */
 }
 
+
+
+.hero-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  /* Background */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: scroll; /* avoid iOS bug */
+  
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  overflow: hidden;
+  will-change: transform; /* performance hint */
+}
+
