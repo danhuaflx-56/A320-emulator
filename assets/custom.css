@@ -4,7 +4,7 @@
     display: none !important;
 }
 
-/* Container to align buttons next to title/logo */
+/* Container to align buttons next to title/logo. */
 .md-header .custom-header-buttons {
   display: flex;
   align-items: center;
