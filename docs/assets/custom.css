@@ -288,7 +288,7 @@ body, .md-main {
 }
 
 .custom-button:hover {
-  color: #005bbb;       /* change text color on hover */
+  color: #005bbb    !important;  /* change text color on hover */
   background-color: transparent !important; /* ensure no background on hover */
 }
 
