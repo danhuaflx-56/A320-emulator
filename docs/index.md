@@ -3,7 +3,20 @@ hide:
   toc: true
 ---
 <!-- Hero Section (Full Width) -->
-<div class="hero-section" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-image: url('assets/banner.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/banner.jpg'); background-color:#004080; color:white; text-align:center; padding:30px 20px;">
+<div class="hero-section" style="
+  width:100vw;
+  position:relative;
+  left:50%;
+  margin-left:-50vw;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/banner.jpg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#004080;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+">
   <h1 style="font-size:3.5em; font-weight:bold; margin-bottom:15px;">A320 Emulator</h1>
   <h3 style="font-size:1.8em; font-style:italic; color:#ccc; margin-bottom:40px;">
     Learning to fly has never been easier
@@ -20,7 +33,8 @@ hide:
     font-size:1.3em;
     font-weight:bold;
     text-decoration:none;
-    transition: background-color 0.2s ease;">
+    transition: background-color 0.2s ease;
+  ">
     Get Started →
   </a>
 </div>
@@ -32,12 +46,15 @@ function updateHeroBackground() {
   hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
 }
 
-// Run on scroll
-window.addEventListener('scroll', updateHeroBackground);
+// Smooth scroll listener
+window.addEventListener('scroll', () => {
+  requestAnimationFrame(updateHeroBackground);
+});
 
-// Run once on page load
+// Align immediately on load
 window.addEventListener('load', updateHeroBackground);
 </script>
+
 
 <!-- Section 1 -->
 <div class="section rectangle-1" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#111; color:white; text-align:center; padding:100px 20px;">
