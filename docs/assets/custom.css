@@ -317,6 +317,25 @@ body, .md-main {
     text-decoration: none; /* optional: remove underline */
 }
 
+.hero-section {
+  position: relative;
+  z-index: 1; /* bring hero text above */
+  background-image: url('assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px; /* enough space for text */
+}
+
+.hero-section h1, 
+.hero-section h2, 
+.hero-section p {
+  position: relative;
+  z-index: 2; /* ensure text is on top */
+  color: #ffffff; /* force white text */
+}
 
 
 
