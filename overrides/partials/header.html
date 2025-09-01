@@ -1,0 +1,24 @@
+{% raw %}
+<header class="md-header">
+  <div class="md-header__inner">
+
+    <!-- Logo -->
+    <a class="md-header__button md-logo" href="{{ base_url }}">
+      <img src="{{ logo }}" alt="{{ site_name }} Logo">
+    </a>
+
+    <!-- Site Title -->
+    <span class="md-header__title">{{ site_name }}</span>
+
+    <!-- Home + About Buttons -->
+    <nav class="custom-header-buttons">
+      <a href="/" class="custom-button">Home</a>
+      <a href="/about/" class="custom-button">About</a>
+    </nav>
+
+    <!-- Search and other Material header stuff -->
+    {{ search_box() }}
+
+  </div>
+</header>
+{% endraw %}
