@@ -1,16 +1,17 @@
+{% raw %}
 <header class="md-header">
   <div class="md-header__inner">
 
     <!-- Logo -->
     {% if config.logo %}
-    <a class="md-header__button md-logo" href="{{ base_url }}">
-      <img src="{{ config.logo | url }}" alt="{{ config.site_name }} Logo">
-    </a>
+      <a class="md-header__button md-logo" href="{{ base_url }}">
+        <img src="{{ config.logo | url }}" alt="{{ config.site_name }} Logo">
+      </a>
     {% endif %}
 
     <!-- Site Title -->
     {% if config.site_name %}
-    <span class="md-header__title">{{ config.site_name }}</span>
+      <span class="md-header__title">{{ config.site_name }}</span>
     {% endif %}
 
     <!-- Home + About Buttons -->
@@ -19,8 +20,13 @@
       <a href="{{ base_url }}about/" class="custom-button">About</a>
     </nav>
 
-    <!-- Search and other Material header stuff -->
-    {{ search_box() }}
+    <!-- Default search box and other Material header items -->
+    {% block header_search %}
+      {% if config.theme.search %}
+        {{ super() }}
+      {% endif %}
+    {% endblock %}
 
   </div>
 </header>
+{% endraw %}
