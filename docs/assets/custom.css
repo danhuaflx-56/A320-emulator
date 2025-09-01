@@ -1,203 +1,25 @@
-/* Make site header smaller */
-/* Hide all header dropdown menus */
-.md-header-nav__button, .md-header-nav__menu {
-    display: none !important;
-}
-
-/* Container to align buttons next to title/logo. */
-.md-header .custom-header-buttons {
-  display: flex;
-  align-items: center;
-  margin-left: 12px; /* space from title/logo */
-  gap: 12px;          /* space between buttons */
-}
-
-/* Style for the buttons */
-.md-header .custom-button {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.md-header .custom-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.custom-button {
-  padding: 10px 20px;
-  font-size: 1.2em;
-  font-weight: bold;
-  border-radius: 6px;
-  background-color: #005bbb;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.custom-button:hover {
-  background-color: #004080;
-}
-
-
-
-
-/* Optional: remove extra padding the dropdown left */
-.md-header-nav,
-.md-header-nav__menu,
-.md-header-nav__button {
-    display: none !important;
-}
-.hero-section {
-  background-image: url('assets/images/hero.jpg'); /* your hero image */
-  background-size: cover;      /* fills the entire div */
-  background-position: center; /* initial center position */
-  height: auto;               /* adjust height as needed */
-  position: relative;
-  overflow: hidden;            /* prevents scroll artifacts */
-}
-
-.md-sidebar {
-    display: none !important;
-}
-.md-main, .md-content, .md-typeset {
-    margin-left: 0 !important;
-  padding-top: 0px;
-  background-color: #212536 !important;
-  color: #ffffff !important; /* switch text to white for readability */
-}
-.md-header {
-  position: fixed;      /* stick to viewport */
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  height: 90px;
-  background-color: #000000;
-  padding: 10px 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
-.md-header__inner {
-  display: flex;
-  align-items: center;  /* centers everything vertically */
-}
-/* Center logo + title vertically */
-.md-header__title {
-  margin: 0;
-  padding: 0;
-  font-size: 3em;        /* try 3em or 3.2em */
-  line-height: 1;        /* keeps it tight */
-  display: flex;
-  align-items: center;   /* vertical centering */
-}
-
-
-/* Style for homepage button */
-.homepage-button {
-  background-color: #005bbb;
-  color: white !important;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1.2em;
-  text-decoration: none;
-}
-.md-header__button.md-logo img {
-  height: 60px;  /* adjust as needed */
-  width: auto;
-  margin-right: 10px; /* spacing between logo and text */
-  margin-top: -7px;
-}
-/* Make all main headings white */
-.md-typeset h1, 
-.md-typeset h2, 
-.md-typeset h3, 
-.md-typeset h4, 
-.md-typeset h5, 
-.md-typeset h6 {
-    color: #ffffff !important;
-}
-
-/* Optional: center the heading */
-.md-typeset h1 {
-    text-align: center;
-    font-size: 3em;  /* adjust size */
-    font-weight: bold;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-body, .md-main {
-    overflow: auto;  /* ensures scrolling is enabled */
-}
-
-.animated-text {
-  opacity: 0;                   /* start invisible */
-  transform: translateY(50px);  /* start slightly below */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-}
-
-/* When the class 'in-view' is added, animate into place */
-.animated-text.in-view {
-  opacity: 1;
-  transform: translateY(0);     /* move to natural position */
-}
-
-.footer-banner {
-  width: 100%;               /* full page width */
-  background-color: #000000; /* solid band */
-  color: #ffffff;
-  text-align: center;
-  padding: 20px 0;           /* vertical spacing */
-  margin-top: 0;             /* no spacing from bottom */
-}
-
-.footer-banner a {
-  color: #005bbb;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.footer-banner a:hover {
-  text-decoration: underline;
-}
-
-.footer-content {
-  max-width: 1000px;         /* optional: keeps text readable on large screens */
-  margin: 0 auto;
-  padding: 0 20px;           /* horizontal padding */
-}
-
-.md-footer {
-  display: none !important;
-}
-
-
-
-
-
-
-/* Ensure the header stays fixed and full width */
+/* ===============================
+   Header
+   =============================== */
 .md-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #000000;
   height: 90px;
   padding: 0 20px;
+  background-color: #000000;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Inner container aligns items horizontally */
+/* Inner container aligns logo, title, and buttons */
 .md-header__inner {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
 }
 
 /* Logo sizing */
@@ -213,15 +35,16 @@ body, .md-main {
   font-weight: bold;
   color: white;
   line-height: 1;
+  margin-right: 20px;
 }
 
-/* Custom buttons container */
+/* Container for Home/About buttons */
 .custom-header-buttons {
   display: flex;
   gap: 15px;
 }
 
-/* Home/About buttons style */
+/* Style for Home/About buttons */
 .custom-header-buttons .custom-button {
   display: inline-block;
   background-color: #005bbb;
@@ -230,6 +53,7 @@ body, .md-main {
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1.2em;
   transition: background-color 0.2s ease;
 }
 
@@ -237,3 +61,115 @@ body, .md-main {
   background-color: #004080;
 }
 
+/* Hide all default Material dropdown menus */
+.md-header-nav__button,
+.md-header-nav__menu,
+.md-header-nav {
+  display: none !important;
+}
+
+/* ===============================
+   Hero Section
+   =============================== */
+.hero-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  background-image: url('assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 60px 20px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+/* ===============================
+   Main Content
+   =============================== */
+.md-sidebar {
+  display: none !important;
+}
+
+.md-main, .md-content, .md-typeset {
+  margin-left: 0 !important;
+  padding-top: 0px;
+  background-color: #212536 !important;
+  color: #ffffff !important;
+}
+
+body, .md-main {
+  overflow: auto;
+}
+
+/* Make all main headings white */
+.md-typeset h1, 
+.md-typeset h2, 
+.md-typeset h3, 
+.md-typeset h4, 
+.md-typeset h5, 
+.md-typeset h6 {
+  color: #ffffff !important;
+}
+
+/* Optional: center the main H1 */
+.md-typeset h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+/* ===============================
+   Animations
+   =============================== */
+.animated-text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.animated-text.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   Footer
+   =============================== */
+.footer-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.footer-banner a {
+  color: #005bbb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-banner a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.md-footer {
+  display: none !important;
+}
