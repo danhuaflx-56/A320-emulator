@@ -155,3 +155,69 @@ body, .md-main {
 .md-footer {
   display: none !important;
 }
+
+
+
+
+
+
+/* Ensure the header stays fixed and full width */
+.md-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #000000;
+  height: 90px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Inner container aligns items horizontally */
+.md-header__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Logo sizing */
+.md-header__button.md-logo img {
+  height: 60px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* Site title */
+.md-header__title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+/* Custom buttons container */
+.custom-header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Home/About buttons style */
+.custom-header-buttons .custom-button {
+  display: inline-block;
+  background-color: #005bbb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.custom-header-buttons .custom-button:hover {
+  background-color: #004080;
+}
+
