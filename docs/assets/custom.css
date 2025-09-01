@@ -309,4 +309,11 @@ body, .md-main {
 }
 
 
+/* Header and footer link hover color */
+.md-header .custom-button:hover,
+.footer-banner a:hover {
+    color: #b6b6b8 !important; /* light gray on hover */
+    background-color: transparent !important; /* keep buttons transparent */
+    text-decoration: none; /* optional: remove underline */
+}
 
