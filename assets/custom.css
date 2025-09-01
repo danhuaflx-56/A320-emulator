@@ -293,3 +293,20 @@ body, .md-main {
 }
 
 
+
+/* Logo spin on hover */
+.header-logo {
+  transition: transform 0.5s ease-in-out; /* smooth start and stop */
+}
+
+.header-logo:hover {
+  animation: spin 2s linear infinite; /* spin continuously */
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+
