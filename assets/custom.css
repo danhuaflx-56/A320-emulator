@@ -26,6 +26,22 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.custom-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #005bbb;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #004080;
+}
+
+
 
 
 /* Optional: remove extra padding the dropdown left */
