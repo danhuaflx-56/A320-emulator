@@ -78,21 +78,29 @@
   <div class="md-header__inner">
 
     <!-- Logo -->
-    <a class="md-header__button md-logo" href="{{ base_url }}">
-      <img src="{{ logo }}" alt="{{ site_name }} Logo">
-    </a>
+    {% if config.logo %}
+      <a class="md-header__button md-logo" href="{{ base_url }}">
+        <img src="{{ config.logo | url }}" alt="{{ config.site_name }} Logo">
+      </a>
+    {% endif %}
 
     <!-- Site Title -->
-    <span class="md-header__title">{{ site_name }}</span>
+    {% if config.site_name %}
+      <span class="md-header__title">{{ config.site_name }}</span>
+    {% endif %}
 
     <!-- Home + About Buttons -->
     <nav class="custom-header-buttons">
-      <a href="/" class="custom-button">Home</a>
-      <a href="/about/" class="custom-button">About</a>
+      <a href="{{ base_url }}" class="custom-button">Home</a>
+      <a href="{{ base_url }}about/" class="custom-button">About</a>
     </nav>
 
-    <!-- Search and other Material header stuff -->
-    {{ search_box() }}
+    <!-- Default search box and other Material header items -->
+    {% block header_search %}
+      {% if config.theme.search %}
+        {{ super() }}
+      {% endif %}
+    {% endblock %}
 
   </div>
 </header>
