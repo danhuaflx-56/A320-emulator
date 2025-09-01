@@ -4,6 +4,29 @@
     display: none !important;
 }
 
+/* Container to align buttons next to title/logo */
+.md-header .custom-header-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* space from title/logo */
+  gap: 12px;          /* space between buttons */
+}
+
+/* Style for the buttons */
+.md-header .custom-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.md-header .custom-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
 /* Optional: remove extra padding the dropdown left */
 .md-header-nav,
 .md-header-nav__menu,
