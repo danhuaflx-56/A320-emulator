@@ -201,3 +201,38 @@ body, .md-main {
   align-items: center;
   gap: 25px; /* spacing between logo, title, buttons */
 }
+
+
+
+
+
+/* Container for logo, title, and buttons */
+.md-header__inner {
+  display: flex;
+  align-items: center;  /* vertically center everything */
+  gap: 15px;            /* space between logo, title, and buttons */
+}
+
+/* Title and buttons container */
+.title-and-buttons {
+  display: flex;
+  align-items: center;  /* vertical centering */
+  gap: 15px;            /* space between title and buttons */
+}
+
+/* Buttons style */
+.custom-button {
+  background-color: #005bbb;
+  color: white;
+  padding: 20px 40px;  /* bigger buttons */
+  font-size: 1.8em;    /* scale up the text */
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #004080;
+}
+
