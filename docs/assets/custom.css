@@ -8,7 +8,7 @@
 .md-header .custom-header-buttons {
   display: flex;
   align-items: center;
-  margin-left: 20px; /* space from title/logo */
+  margin-left: 12px; /* space from title/logo */
   gap: 12px;          /* space between buttons */
 }
 
@@ -25,6 +25,7 @@
 .md-header .custom-button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 
 
 /* Optional: remove extra padding the dropdown left */
