@@ -173,3 +173,31 @@ body, .md-main {
 .md-footer {
   display: none !important;
 }
+
+
+
+
+
+/* Make header buttons larger and inline with logo/title */
+.md-header .custom-button {
+  display: inline-block;
+  background-color: #005bbb;
+  color: white;
+  padding: 25px 40px;      /* bigger buttons */
+  font-size: 1.8em;        /* larger text */
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.md-header .custom-button:hover {
+  background-color: #004080;
+}
+
+/* Ensure buttons stay inline with logo/title */
+.md-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* spacing between logo, title, buttons */
+}
