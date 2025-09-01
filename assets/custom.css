@@ -236,3 +236,38 @@ body, .md-main {
   background-color: #004080;
 }
 
+
+
+
+/* Title and buttons container */
+.title-and-buttons {
+  display: flex;
+  align-items: center;  /* vertically center content */
+  gap: 15px;            /* space between title and buttons */
+}
+
+/* Buttons style with transparent background */
+.custom-button {
+  background-color: transparent;  /* no background */
+  color: white;
+  padding: 20px 40px;   /* keeps size */
+  font-size: 1.8em;     /* bigger text */
+  font-weight: bold;
+  border-radius: 6px;   /* optional */
+  text-decoration: none;
+  transition: color 0.2s ease;  /* only color changes on hover */
+}
+
+.custom-button:hover {
+  color: #005bbb;       /* change text color on hover */
+}
+
+/* Shift site title down */
+.md-header__title {
+  display: inline-block;
+  margin-top: 20px;     /* shift down */
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+}
+
