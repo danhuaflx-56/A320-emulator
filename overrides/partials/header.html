@@ -1,32 +1,44 @@
-{% raw %}
 <header class="md-header">
   <div class="md-header__inner">
 
     <!-- Logo -->
     {% if config.logo %}
-      <a class="md-header__button md-logo" href="{{ base_url }}">
-        <img src="{{ config.logo | url }}" alt="{{ config.site_name }} Logo">
-      </a>
+    <a class="md-header__button md-logo" href="{{ base_url }}">
+      <img src="{{ config.logo }}" alt="{{ config.site_name }} Logo" style="height:60px; width:auto; margin-right:10px;">
+    </a>
     {% endif %}
 
     <!-- Site Title -->
     {% if config.site_name %}
-      <span class="md-header__title">{{ config.site_name }}</span>
+    <span class="md-header__title" style="font-size:3em; line-height:1; display:flex; align-items:center;">
+      {{ config.site_name }}
+    </span>
     {% endif %}
 
-    <!-- Home + About Buttons -->
-    <nav class="custom-header-buttons">
-      <a href="{{ base_url }}" class="custom-button">Home</a>
-      <a href="{{ base_url }}about/" class="custom-button">About</a>
+    <!-- Custom Buttons -->
+    <nav class="custom-header-buttons" style="margin-left:20px; display:flex; gap:10px;">
+      <a href="/" class="custom-button" style="
+         background-color:#005bbb;
+         color:white;
+         padding:10px 20px;
+         border-radius:6px;
+         font-weight:bold;
+         text-decoration:none;
+         line-height:1.5;">Home</a>
+      <a href="/about/" class="custom-button" style="
+         background-color:#005bbb;
+         color:white;
+         padding:10px 20px;
+         border-radius:6px;
+         font-weight:bold;
+         text-decoration:none;
+         line-height:1.5;">About</a>
     </nav>
 
-    <!-- Default search box and other Material header items -->
-    {% block header_search %}
-      {% if config.theme.search %}
-        {{ super() }}
-      {% endif %}
-    {% endblock %}
+    <!-- Search box -->
+    {% if config.theme.search %}
+      {% block header_search %}{{ super() }}{% endblock %}
+    {% endif %}
 
   </div>
 </header>
-{% endraw %}
