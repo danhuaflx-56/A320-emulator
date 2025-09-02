@@ -64,7 +64,7 @@ hide:
 </div>
 
 <!-- Section 4 -->
-<div class="section rectangle-4" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#1a1a1a; color:white; text-align:center; padding:100px 20px;">
+<div class="section rectangle-4" style="width:100vw; background-image: url('assets/banner2.png'); background-position: center; background-repeat: no-repeat; background-size: cover;position:relative; left:50%; margin-left:-50vw; background-color:#1a1a1a; color:white; text-align:center; padding:100px 20px;">
   <h2 class="animated-text" style="font-size:2.5em; margin-bottom:20px;">Tips & Tricks</h2>
   <p class="animated-text" style="font-size:1.2em; max-width:700px; margin:0 auto;">
     Learn how to operate the A320 like a pro with efficiency and realism in mind.
