@@ -18,6 +18,7 @@ extra:
     code: Fira Code
 nav:
   - Getting Started: getting-started.md
+  - About: about.md
   - Systems Overview: systems-overview.md
   - Procedures: procedures.md
   - Tips & Tricks: tips.md
