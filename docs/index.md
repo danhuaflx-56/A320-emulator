@@ -39,50 +39,13 @@ hide:
   </a>
 </div>
 
-<script>
-function updateHeroBackground() {
-  const hero = document.querySelector('.hero-section');
-  const scrollY = window.scrollY;
-  hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
-}
-
-// Smooth scroll listener
-window.addEventListener('scroll', () => {
-  requestAnimationFrame(updateHeroBackground);
-});
-
-// Align immediately on load
-window.addEventListener('load', updateHeroBackground);
-</script>
-
-
 <!-- Section 1 -->
 <div class="section rectangle-1" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#111; color:white; text-align:center; padding:100px 20px;">
-  <h2  class="animated-text" style="font-size:2.5em; margin-bottom:20px;">Getting Started</h2>
-  <p   class="animated-text" style="font-size:1.2em; max-width:700px; margin:0 auto;">
+  <h2 class="animated-text" style="font-size:2.5em; margin-bottom:20px;">Getting Started</h2>
+  <p class="animated-text" style="font-size:1.2em; max-width:700px; margin:0 auto;">
     Learn about cockpit layout, controls, and basic startup procedures.
   </p>
 </div>
-
-<script>
-function updateHeroBackground() {
-  const hero = document.querySelector('.hero-section');
-  const scrollY = window.scrollY;
-
-  // Smooth parallax using translateY instead of background-position
-  hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
-}
-
-// Run on scroll
-window.addEventListener('scroll', () => {
-  requestAnimationFrame(updateHeroBackground);
-});
-
-// Run immediately so it’s aligned at load
-window.addEventListener('load', updateHeroBackground);
-</script>
-
-
 
 <!-- Section 2 -->
 <div class="section rectangle-2" style="width:100vw; background-image: url('assets/banner1.png'); background-position: center; background-repeat: no-repeat; background-size: cover; position:relative; left:50%; margin-left:-50vw; background-color:#1a1a1a; color:white; text-align:center; padding:100px 20px;">
@@ -130,8 +93,37 @@ window.addEventListener('load', updateHeroBackground);
   </div>
 </footer>
 
-
-<!-- Section 5 -->
-<div class="section rectangle-5 style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#212536; color:white; text-align:center; padding:10px 20px;">
+<!-- Section 5 (fixed markup) -->
+<div class="section rectangle-5" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#212536; color:white; text-align:center; padding:10px 20px;">
+  <!-- optional content -->
 </div>
 
+<!-- Single parallax script (one copy only) -->
+<script>
+(function() {
+  const hero = document.querySelector('.hero-section');
+  if (!hero) return;
+
+  function setHeroPos() {
+    const scrollY = window.scrollY || window.pageYOffset;
+    hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
+  }
+
+  // rAF-throttled scroll handler
+  let ticking = false;
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        setHeroPos();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('load', setHeroPos);
+  // also set immediately
+  setHeroPos();
+})();
+</script>
