@@ -145,25 +145,19 @@ hide:
 
 <!-- Scroll-triggered text animation -->
 <script>
-  function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.bottom > 0
-    );
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedTexts = document.querySelectorAll('.animated-text');
 
-  function animateOnScroll() {
-    const elements = document.querySelectorAll('.animated-text');
-    elements.forEach(el => {
-      if (isInViewport(el)) {
-        el.classList.add('in-view');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // trigger only once
       }
     });
-  }
+  });
 
-  window.addEventListener('scroll', animateOnScroll);
-  window.addEventListener('resize', animateOnScroll);
-  window.addEventListener('load', animateOnScroll);
+  animatedTexts.forEach(el => observer.observe(el));
+});
 </script>
 
