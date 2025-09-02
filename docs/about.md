@@ -26,14 +26,20 @@ hide:
 <!-- About Content -->
 <div class="section" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#0d1826; color:white; text-align:center; padding:100px 20px;">
   <h2 style="font-size:2.5em; margin-bottom:20px;">About A320 Emulator</h2>
-  <p style="font-size:1.2em; max-width:700px; margin:0 auto;">
-    This project is designed to help aviation enthusiasts and pilots explore the Airbus A320 systems in a realistic environment. It includes detailed guides, procedures, and tips for mastering cockpit operations. Contrary to the name of this project, most of the components of the structure of this emulator will be in the form of documentations, or articles that demonstrate or explain flying an Airbus. 
+  <p style="font-size:1.2em; max-width:700px; margin:0 auto 20px auto;">
+    This project is designed to help aviation enthusiasts and pilots explore the Airbus A320 systems in a realistic environment. It includes detailed guides, procedures, and tips for mastering cockpit operations. Contrary to the name of this project, most of the components of the structure of this emulator will be in the form of documentation or articles that demonstrate or explain flying an Airbus.
+  </p>
 
-    The Emulator will be based on the following
-    *The Fenix A320 for Microsoft Flight Simulator (although the general knowledge can be applied to the majority of simualtors)
-    *Knowledge of basic aircraft flight and instrument flying (though some concepts may be explained, it's best to learn about them separately, which you can access in resources)
+  <p style="font-size:1.2em; max-width:700px; margin:0 auto 20px auto;">
+    The Emulator will be based on the following:
+  </p>
+  <ul style="font-size:1.2em; max-width:700px; margin:0 auto 20px auto; text-align:left; list-style-type: disc; padding-left: 20px;">
+    <li>The Fenix A320 for Microsoft Flight Simulator (although the general knowledge can be applied to most simulators)</li>
+    <li>Knowledge of basic aircraft flight and instrument flying (though some concepts may be explained, it's best to learn them separately, which you can access in resources)</li>
+  </ul>
 
-Of course, there may be mistakes here and there, and if you do spot any, be sure to contact me at daniel56huang@gmail.com
+  <p style="font-size:1.2em; max-width:700px; margin:0 auto 40px auto;">
+    Of course, there may be mistakes here and there, and if you do spot any, be sure to contact me at <a href="mailto:daniel56huang@gmail.com" style="color:#005bbb;">daniel56huang@gmail.com</a>
   </p>
 
   <h2 style="font-size:2.5em; margin-top:60px; margin-bottom:20px;">The Mission</h2>
@@ -41,6 +47,7 @@ Of course, there may be mistakes here and there, and if you do spot any, be sure
     When I joined the flight simulation community, it was difficult to self-study aircraft at a deep level. In the real world, pilots have dedicated classes and access to official documents and training. Our goal is to make learning aviation systems accessible and interactive, providing users with the tools to gain knowledge, practice procedures, and enjoy the simulation experience, up to the highest realism. 
   </p>
 </div>
+
 
 <!-- Footer Banner -->
 <footer class="footer-banner" style="width:100vw; position:relative; left:50%; margin-left:-50vw; background-color:#000000; color:white; padding:40px 20px;">
