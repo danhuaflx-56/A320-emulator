@@ -88,7 +88,7 @@ hide:
 
     <!-- Copyright -->
     <div class="footer-copy" style="flex-basis:100%; text-align:center; margin-top:20px; font-size:0.9em; color:#777;">
-      © 2025 A320 Emulator. All rights reserved.
+      © 2025 A320 Emulator. All rights reserved. Simulation purposes only.
     </div>
   </div>
 </footer>
