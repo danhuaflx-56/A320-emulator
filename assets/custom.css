@@ -17,8 +17,8 @@
 .md-header__inner {
   display: flex;
   align-items: center;
-  gap: 20px; /* space between logo, title, and buttons */
   width: 100%;
+  gap: 15px;
 }
 
 /* Logo sizing */
@@ -36,6 +36,7 @@
   font-weight: bold;
   color: white;
   line-height: 1;
+  margin-right: 20px;
 }
 
 /* Container for Home/About buttons */
@@ -44,8 +45,10 @@
   gap: 15px;
 }
 
-/* Transparent buttons with hover color */
-.custom-button {
+/* Style for Home/About buttons */
+.custom-header-buttons .custom-button,
+.md-header .custom-button {
+  display: inline-block;
   background-color: transparent !important;
   color: white;
   padding: 20px 40px;
@@ -57,7 +60,7 @@
 }
 
 .custom-button:hover {
-  color: #005bbb !important; /* highlight color */
+  color: #005bbb !important;
   background-color: transparent !important;
 }
 
@@ -68,34 +71,20 @@
   display: none !important;
 }
 
-/* Logo spin on hover */
-.header-logo {
-  transition: transform 0.5s ease-in-out;
-}
-
-.header-logo:hover {
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 /* =============================== Hero Section =============================== */
 .hero-section {
   width: 100vw;
   position: relative;
   left: 50%;
   margin-left: -50vw;
+  z-index: 1;
   background-image: url('assets/images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 20px;
-  text-align: center;
   color: white;
-  z-index: 1;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero-section h1,
@@ -103,7 +92,7 @@
 .hero-section p {
   position: relative;
   z-index: 2;
-  color: #ffffff !important; /* force white text */
+  color: #ffffff;
 }
 
 /* =============================== Main Content =============================== */
@@ -118,11 +107,8 @@
   padding-top: 0px;
   background-color: #212536 !important;
   color: #ffffff !important;
-}
-
-body,
-.md-main {
-  overflow: auto;
+  position: relative;
+  z-index: 2; /* ensure content is above hero background */
 }
 
 /* Make all main headings white */
@@ -135,7 +121,7 @@ body,
   color: #ffffff !important;
 }
 
-/* Center main H1 */
+/* Optional: center the main H1 */
 .md-typeset h1 {
   text-align: center;
   font-size: 3em;
@@ -191,7 +177,21 @@ body,
   display: none !important;
 }
 
-/* Header + Footer hover consistency */
+/* =============================== Logo Spin =============================== */
+.header-logo {
+  transition: transform 0.5s ease-in-out;
+}
+
+.header-logo:hover {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Header/footer link hover */
 .md-header .custom-button:hover,
 .footer-banner a:hover {
   color: #b6b6b8 !important;
