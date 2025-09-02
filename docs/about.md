@@ -9,7 +9,7 @@ hide:
   position:relative;
   left:50%;
   margin-left:-50vw;
-  background-color:#607D8B; /* blue-gray background */
+  background-color:#182b42; /* blue-gray background */
   color:white;
   text-align:center;
   padding:30px 20px;
@@ -41,7 +41,7 @@ hide:
   <div class="footer-content" style="display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; flex-wrap:wrap;">
     <!-- Logo -->
     <div class="footer-logo">
-      <img src="assets/logo.png" alt="A320 Emulator Logo" style="height:75px;">
+      <img src="assets/logo.jpg" alt="" style="height:75px;">
     </div>
 
     <!-- Contact Info -->
@@ -52,7 +52,7 @@ hide:
 
     <!-- Copyright -->
     <div class="footer-copy" style="flex-basis:100%; text-align:center; margin-top:20px; font-size:0.9em; color:#777;">
-      © 2025 A320 Emulator. All rights reserved.
+      © 2025 A320 Emulator. All rights reserved. Simulation purposes only
     </div>
   </div>
 </footer>
