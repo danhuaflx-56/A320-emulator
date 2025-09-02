@@ -99,6 +99,7 @@ hide:
 </div>
 
 <!-- Single parallax script (one copy only) -->
+
 <script>
 (function() {
   const hero = document.querySelector('.hero-section');
@@ -127,3 +128,42 @@ hide:
   setHeroPos();
 })();
 </script>
+<!-- Hero parallax script -->
+<script>
+  function updateHeroBackground() {
+    const hero = document.querySelector('.hero-section');
+    const scrollY = window.scrollY;
+    hero.style.backgroundPosition = `center ${scrollY * 0.5}px`;
+  }
+
+  window.addEventListener('scroll', () => {
+    requestAnimationFrame(updateHeroBackground);
+  });
+
+  window.addEventListener('load', updateHeroBackground);
+</script>
+
+<!-- Scroll-triggered text animation -->
+<script>
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom > 0
+    );
+  }
+
+  function animateOnScroll() {
+    const elements = document.querySelectorAll('.animated-text');
+    elements.forEach(el => {
+      if (isInViewport(el)) {
+        el.classList.add('in-view');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateOnScroll);
+  window.addEventListener('resize', animateOnScroll);
+  window.addEventListener('load', animateOnScroll);
+</script>
+
