@@ -22,7 +22,7 @@ hide:
     Learning to fly has never been easier
   </h3>
   <p style="font-size:1.3em; max-width:700px; margin:0 auto 50px auto; line-height:1.8;">
-    Explore the systems of the beautiful Airbus A320, the bestselling and most advanced passenger jet in history. This site provides step-by-step documentation to help you master everything from cockpit familiarization to advanced procedures.
+    Explore the systems of the Airbus A320, the bestselling and most advanced passenger jet in history. This site provides step-by-step documentation to help you master everything from cockpit familiarization to advanced procedures.
   </p>
   <a href="getting-started/" style="
     display:inline-block;
