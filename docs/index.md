@@ -148,6 +148,12 @@ hide:
 document.addEventListener('DOMContentLoaded', () => {
   const animatedTexts = document.querySelectorAll('.animated-text');
 
+  const observerOptions = {
+    root: null, // viewport
+    rootMargin: '0px 0px -25% 0px', // trigger when element is within bottom quarter
+    threshold: 0 // trigger as soon as any part intersects
+  };
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -155,9 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target); // trigger only once
       }
     });
-  });
+  }, observerOptions);
 
   animatedTexts.forEach(el => observer.observe(el));
 });
 </script>
+
 
