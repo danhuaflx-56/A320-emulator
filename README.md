@@ -11,8 +11,9 @@ This project is designed to help aviation enthusiasts and pilots explore the Air
 
 The Emulator will be based on the following:
 
-*The Fenix A320 for Microsoft Flight Simulator (although the general knowledge can be applied to most simulators)
-*Knowledge of basic aircraft flight and instrument flying (though some concepts may be explained, it's best to learn them separately, which you can access in resources)
+**The Fenix A320 for Microsoft Flight Simulator (although the general knowledge can be applied to most simulators)
+
+**Knowledge of basic aircraft flight and instrument flying (though some concepts may be explained, it's best to learn them separately, which you can access in resources)
 Of course, there may be mistakes here and there, and if you do spot any, be sure to contact me at daniel56huang@gmail.com
 
 # The Mission
