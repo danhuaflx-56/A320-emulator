@@ -198,3 +198,26 @@
   background-color: transparent !important;
   text-decoration: none;
 }
+
+
+
+
+/* Start hidden */
+.animated-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* The animation itself */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
